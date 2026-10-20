@@ -1,0 +1,54 @@
+.chromaKey {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #00ff00;
+}
+
+.avatarContainer {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 100dvw;
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+.avatarImage {
+  object-fit: contain;
+  max-width: 100dvw;
+  max-height: 100dvh;
+}
+
+.avatarDefaultAnimation {
+  animation: default-animation 720ms forwards infinite;
+}
+
+.avatarBasicAnimation {
+  animation: basic-animation 520ms forwards infinite;
+}
+
+@keyframes default-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes basic-animation {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-21px);
+  }
+}
