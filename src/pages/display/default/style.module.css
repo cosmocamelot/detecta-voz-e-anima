@@ -1,0 +1,46 @@
+.avatarContainer {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 100dvw;
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+.avatarImage {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.avatarDefaultAnimation {
+  animation: default-animation 720ms forwards infinite;
+}
+
+.avatarBasicAnimation {
+  animation: basic-animation 520ms forwards infinite;
+}
+
+@keyframes default-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes basic-animation {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-21px);
+  }
+}

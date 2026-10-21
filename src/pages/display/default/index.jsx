@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styles from './style.module.css';
 
-import useMainControllerHook from '../../hook/mainController'
+import useMainControllerHook from '../../../hook/mainController'
 
 export default () => {
   const animationElementRef = useRef();
@@ -23,10 +23,8 @@ export default () => {
   },[]);
 
   return (
-    <div className={styles.chromaKey}>
-      <figure ref={animationElementRef} className={styles.avatarContainer}>
-        <img ref={animationImageRef} width={520} height={720} className={styles.avatarImage} src='images/avatar_silencio.png' alt='' draggable={'false'} />
-      </figure>
-    </div>
+    <figure ref={animationElementRef} className={styles.avatarContainer}>
+      <img ref={animationImageRef} width={520} height={720} className={styles.avatarImage} src='images/avatar_silencio.png' alt='' draggable={'false'} />
+    </figure>
   );
 };
