@@ -29,7 +29,7 @@
 }
 
 .display {
-  /* position: relative; */
+  position: relative;
   display: flex;
   width: 100%;
   cursor: pointer;
@@ -59,7 +59,7 @@
   max-height: 100%;
   overflow: hidden;
 
-  transition: transform 120ms ease-in;
+  transition: width .12s ease;
 }
 
 .group {
@@ -83,12 +83,8 @@
   transform: translate(-50%, -100%);
 }
 
-.mainPageContainer.hidden .sideBar:nth-of-type(1) {
-  transform: translateX(-100%);
-}
-
-.mainPageContainer.hidden .sideBar:nth-of-type(2) {
-  transform: translateX(100%);
+.mainPageContainer.hidden .sideBar {
+  width: 0px;
 }
 
 .button {
