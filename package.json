@@ -1,7 +1,7 @@
 {
   "name": "detecta-voz-e-anima",
   "productName": "detecta-voz-e-anima",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "My Electron application description",
   "keywords": [],
