@@ -1,4 +1,5 @@
 import { Outlet } from "react-router";
+import { Move, Power } from "lucide-react";
 
 import styles from './style.module.css';
 
@@ -10,7 +11,7 @@ export default () => {
   return (
     <div className={styles.mainPageContainer}>
       <span className={styles.dragWindow}>
-        move
+        <Move />
       </span>
 
       {/* Manuprincipal + Seleção de perfis */}
@@ -19,7 +20,7 @@ export default () => {
         </div>
         <div className={styles.group}>
           <button className={[styles.button, styles.exitAppButton].join(' ')} onClick={closeApp}>
-            Sair
+            <Power strokeWidth={3} />
           </button>
         </div>
       </div>
