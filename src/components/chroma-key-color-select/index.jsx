@@ -53,9 +53,6 @@ export function ChromaKeyColorSelect() {
             <li>
               <i><b>RGB:</b> rgb(255,255,255)</i>
             </li>
-            <li>
-              <i><b>RGBA:</b> rgb(255,255,255,1.0)</i>
-            </li>
           </ul>
         </div>
       </div>
