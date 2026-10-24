@@ -62,7 +62,6 @@
   height: 100%;
   max-width: var(--sidebar-width);
   max-height: 100%;
-  overflow: hidden;
 
   transition: width .12s ease;
 }
@@ -97,6 +96,7 @@
 }
 
 .button {
+  position: relative;
   background: none;
   border: none;
   padding: 12px 3px;
@@ -114,6 +114,34 @@
 
 .button:active {
   background-color: #575757;
+}
+
+.icon {
+  pointer-events: none;
+}
+
+.buttonContent {
+  position: absolute;
+  top: 0;
+  left: var(--sidebar-width);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+  font-size: 12px;
+  text-wrap: nowrap;
+  background-color: var(--sidebar-bg);
+  border: 1px solid #353535;
+  pointer-events: none;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all .12s ease;
+}
+
+.button:hover .buttonContent {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 .exitAppButton {
